@@ -38,5 +38,5 @@ The @stryker-mutator/jest-runner also provides a couple of configurable options 
 ## 3. Run:  
 stryker run --logLevel trace
 
-references:
-https://stryker-mutator.io/docs/
+References:  
+https://stryker-mutator.io/docs/  
