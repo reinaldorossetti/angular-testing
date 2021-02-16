@@ -27,7 +27,7 @@ The @stryker-mutator/jest-runner also provides a couple of configurable options 
 {    
   "jest": {  
     "projectType": "custom",  
-    "configFile": "path/to/your/custom/jestConfig.js",  
+    "configFile": "jest.config.js",  
     "config": {  
       "testEnvironment": "jest-environment-jsdom-sixteen"  
     },  
