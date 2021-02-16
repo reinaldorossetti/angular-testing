@@ -8,20 +8,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Mutation Testing added to project.
 
-1. Dependences:  
+##1. Dependences:  
+```
 npm install -g stryker-cli  
 npm install --save-dev @stryker-mutator/core  
 npm i --save-dev @stryker-mutator/jest-runner  
 npm install --save-dev jest-environment-jsdom-sixteen  
-
-2. Configuration:  
+```
+##2. Configuration:  
 Make sure you set the testRunner option to "jest".  
-
+```
 {  
   "testRunner": "jest"  
-}  
+} 
+```
 The @stryker-mutator/jest-runner also provides a couple of configurable options using the jest property in your Stryker config:
-
+```
 {    
   "jest": {  
     "projectType": "custom",  
@@ -32,6 +34,6 @@ The @stryker-mutator/jest-runner also provides a couple of configurable options 
     "enableFindRelatedTests": false,  
   }  
 }  
-
-3. Run:
+```
+##3. Run:  
 stryker run --logLevel trace
