@@ -10,10 +10,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## 1. Dependences:  
 ```
-npm install -g stryker-cli  
-npm install --save-dev @stryker-mutator/core  
+npm install
+npm i --save-dev @stryker-mutator/core  
 npm i --save-dev @stryker-mutator/jest-runner  
-npm install --save-dev jest-environment-jsdom-sixteen  
+npm i --save-dev jest-environment-jsdom-sixteen  
 ```
 ## 2. Configuration:  
 Make sure you set the testRunner option to "jest".  
