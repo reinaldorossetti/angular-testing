@@ -29,7 +29,7 @@ The @stryker-mutator/jest-runner also provides a couple of configurable options 
     "config": {  
       "testEnvironment": "jest-environment-jsdom-sixteen"  
     },  
-    "enableFindRelatedTests": true,  
+    "enableFindRelatedTests": false,  
   }  
 }  
 
