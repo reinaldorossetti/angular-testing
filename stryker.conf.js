@@ -12,7 +12,7 @@ module.exports = {
       "config": {
         "testEnvironment": "jest-environment-jsdom-sixteen"
       },
-      "enableFindRelatedTests": true,
+      "enableFindRelatedTests": false,
     },
   reporters: ['progress', 'clear-text', 'html'],
   concurrency: 11,
