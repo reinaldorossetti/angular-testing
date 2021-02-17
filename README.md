@@ -35,8 +35,16 @@ The @stryker-mutator/jest-runner also provides a couple of configurable options 
   }  
 }  
 ```
-## 3. Run:  
+## 3. Run:
+3.1  Run All tests
+```
 stryker run --logLevel trace
+```
+3.2 Run specific test
+```
+stryker run ./stryker/hello_module.config.json --logLevel trace
+```
 
 References:  
 https://stryker-mutator.io/docs/  
+https://stryker-mutator.io/docs/mutation-testing-elements/supported-mutators/

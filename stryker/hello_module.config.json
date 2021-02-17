@@ -1,0 +1,32 @@
+{
+    "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+    "mutate": [
+      "src/app/hello/full-name-list/*.ts", "!src/**/*.spec.ts"
+    ],
+    "mutator": {
+      "name": "javascript",
+      "excludedMutations": [
+        "Method Expression",
+        "UnaryOperator",
+        "UpdateOperator"
+      ]
+    },
+    "testRunner": "jest",
+    "timeoutMS": 20000,
+    "reporters": [
+      "progress",
+      "clear-text",
+      "html"
+    ],
+    "coverageAnalysis": "true",
+    "jest": {
+        "projectType": "custom",
+        "configFile": "jest.config.js",
+        "config": {
+          "testEnvironment": "jest-environment-jsdom-sixteen"
+        },
+        "enableFindRelatedTests": false
+      },
+    "warnings": false,
+    "coverageAnalysis": "perTest"
+  }

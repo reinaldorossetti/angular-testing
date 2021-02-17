@@ -1,0 +1,42 @@
+{
+    "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+    "mutate": [
+      "src/app/hello/*.ts", "!*.spec.ts"
+    ],
+    "mutator": {
+      "name": "javascript",
+      "excludedMutations": [
+        "ArithmeticOperator",
+        "ArrayDeclaration",
+        "ArrowFunction",
+        "BlockStatement",
+        "BooleanLiteral",
+        "ConditionalExpression",
+        "EqualityOperator",
+        "LogicalOperator",
+        "ObjectLiteral",
+        "UnaryOperator",
+        "UpdateOperator"
+      ]
+    },
+    "testRunner": "command",
+    "commandRunner": {
+      "command": "CI=true npm test 'full-name-list.component.ts'"
+    },
+    "timeoutMS": 20000,
+    "reporters": [
+      "progress",
+      "clear-text",
+      "html"
+    ],
+    "coverageAnalysis": "off",
+    "jest": {
+        "projectType": "custom",
+        "configFile": "jest.config.js",
+        "config": {
+          "testEnvironment": "jest-environment-jsdom-sixteen"
+        },
+        "enableFindRelatedTests": false
+      },
+    "warnings": false
+  }
