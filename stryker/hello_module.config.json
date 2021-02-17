@@ -6,6 +6,7 @@
     "mutator": {
       "name": "javascript",
       "excludedMutations": [
+        "Logical Operator",
         "Method Expression",
         "UnaryOperator",
         "UpdateOperator"
